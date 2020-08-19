@@ -12,7 +12,7 @@ https://mycompany.bamboohr.com/reports/custom/My+Custom+Report/983
 Your domain name will be the first part of the link before '.bamboohr' (in this example, 'mycompany'), while the report number will be the number at the end of the link (in this example, 983). Build out the report link in the first part of the script using your company domain name and report number as follows:
 
 ```
-  var url = "https://api.bamboohr.com/api/gateway.php/mycompany/v1/reports/983?format=xml";
+var url = "https://api.bamboohr.com/api/gateway.php/mycompany/v1/reports/983?format=xml";
 ```
 
 ## Enter your API key
@@ -22,7 +22,7 @@ You will need to obtain an API key from a system administrator in BambooHR. Your
 Once you have obtained your API key, enter the key in the appropriate section of the script:
 
 ```
-  var apiKey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+var apiKey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 ```
 
 ## Enter the destination GSheet link
@@ -30,7 +30,7 @@ Once you have obtained your API key, enter the key in the appropriate section of
 This is the sheet where you want your report to live. If you don't have a specific location in mind, create a new GSheet and copy the link and paste it here.
 
 ```
-    var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 ```
 
 ## Test your function
